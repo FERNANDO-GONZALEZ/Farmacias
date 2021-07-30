@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Consultar datos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Consultar datos</h2>
+<a href="../index.html"> <p align=center> <img src="../../img/select.png" width="100" height="100" name="Inicio"> </p> </a>
+
+  <form class="form-horizontal" action="seleccionar_clientes.php" role="form" method="POST">
+
+    <div class="input">
+      <label>NIT:</label>
+      <input type="text" class="form-control"  name="NIT" placeholder="Ingrese el NIT a consultar">
+    </div>
+     <button type="submit" name="submit" class="btn btn-default">Consultar datos</button>
+  </form>
+
+</div>
+
+</body>
+</html>

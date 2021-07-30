@@ -1,0 +1,144 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Ventas</title>
+
+          <meta charset="utf-8">
+          <link href="../../img/capsula.ico" rel="shortcut icon" type="image/x-icon" />
+          <meta name="viewport" content="width=device-width, user-scalable=no, initial-scalable=1.0, maximun-scalable=1.0, minium-ascale1.0">
+          <link rel="stylesheet" href="css/bootstrap.min.css">
+          <!-- agregar estilos propios-->
+          <link rel="stylesheet" href="css/estilos.css">
+   
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="panel panel-default" align=center>
+      <div class="panel-heading" style="background : #F2F2F2;">
+      <h1>
+        <p> V E N T A S </p>
+        <b> <p> <img src="../../img/venta.png" width="360" height="200"> </p>
+          <a href="../../index.php"> <p> <img src="../../img/home.png" width="50" height="50" name="Inicio"> </p> </a>
+      </h1>
+       </b>
+			<div class="panel-body" style="background : #FAFAFA;">
+
+  				<div class="container">
+                <!--form name="formulario" method="post" action="send_form_email.php"--> 
+                <form class="form-horizontal" action="insertar_ventas.php" role="form" method="POST">
+	                <div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+	                            <label for="VentaNo">VENTA #</label>
+	                            <input  type="text" class="form-control" name="VentaNo" maxlength="30" placeholder="VentaNo">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+	                            <label for="VendedorNo">VENDEDOR #</label>
+	                            <input  type="text" class="form-control" name="VendedorNo" maxlength="30" placeholder="VendedorNo">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+	                            <label for="NombreVendedor">NOMBRE VENDEDOR</label>
+	                            <input  type="text" class="form-control" name="NombreVendedor" maxlength="30" placeholder="NombreVendedor">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+	                            <label for="FechaDeVenta">FECHA DE VENTA</label>
+	                            <input  type="text" class="form-control" name="FechaDeVenta" maxlength="30" placeholder="FechaDeVenta">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+	                            <label for="IdCliente">DOCUMENTO CLIENTE</label>
+	                            <input  type="text" class="form-control" name="IdCliente" maxlength="30" placeholder="IdCliente">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+	                            <label for="NombreCliente">NOMBRE DEL CLIENTE</label>
+	                            <input  type="text" class="form-control" name="NombreCliente" maxlength="40" placeholder="NombreCliente">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+	                            <label for="Direccion">DIRECCIÓN</label>
+	                            <input  type="text" class="form-control" name="Direccion" maxlength="40" placeholder="Direccion">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+	                            <label for="Telefono">TELÉFONO</label>
+	                            <input  type="text" class="form-control" name="Telefono" maxlength="13" placeholder="Telefono">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+	                            <label for="Celular">CELULAR</label>
+	                            <input  type="text" class="form-control" name="Celular" maxlength="13" placeholder="Celular">
+							</div>
+						</div>
+					</div>
+					<hr>
+	                <div class="row">
+						<div class="well well-sm">DETALLES DE LA VENTA</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="CodigoProducto">Código</label>
+								<input type="Int" class="form-control" id="CodigoProducto" maxlength="30" placeholder="CodigoProducto">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="Detalle">Detalle</label>
+								<input type="text" class="form-control" id="Detalle" maxlength="40" placeholder="Detalle">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="Cantidad">Cantidad</label>
+								<input type="Int" class="form-control" id="Cantidad" maxlength="5" placeholder="Cantidad">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="Subtotal">Subtotal</label>
+								<input type="Int" class="form-control" id="Subtotal" maxlength="10" placeholder="Subtotal">
+							</div>
+						</div>
+					</div>	
+					<hr>
+	                <div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+	                            <label for="TotalVenta">TOTAL VENTA</label>
+	                            <input  type="Int" class="form-control" name="TotalVenta" maxlength="10" placeholder="TotalVenta">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+	                            <label for="Notas">NOTAS ADICIONALES</label><br>
+	                            <textarea  class="form-control" name="Notas" maxlength="120"></textarea>
+							</div>
+						</div>
+						
+					</div>
+					<center>
+						<button type="submit" class="btn btn-info">Enviar</button>
+					</center>
+                </form>
+  				</div>
+  				</div>
+  				</div>
+                <div class="panel-footer" style="background : #E6E6E6;">
+      <p align=center> Programación de Sitios Web </p>
+      <p align=center> 2017 </p>
+      <p align=center> Universidad Nacional Abierta y a Distancia </p>
+</body>
+</html>

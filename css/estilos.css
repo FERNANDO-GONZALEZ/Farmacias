@@ -1,0 +1,76 @@
+/* HEADER */
+.navbar {
+	margin-bottom: 0;
+}
+
+.jumbotron{
+	background: #02DDE3;
+	color:#F7FEFE;
+	padding: 20px 0;
+}
+
+.titulo-hist{
+	font-size: 50px;
+}
+/* POST */
+
+.main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.post {
+	padding-bottom: 20px;
+	margin-bottom: 20px; 
+	border-bottom: 1px solid #999;
+}
+
+.post .post-title a {
+	color: #132CF6  ;
+}
+.post .thumb {
+	margin-right: 10px;
+	width: 40%;
+}
+
+.post .thumb img {
+	width: 100%;
+}
+.post .contenedor-botones{
+	width: 100%
+}
+
+/*miga de pan*/
+
+
+.miga-de-pan{
+	background: #1347F6;
+	color:#1347F6 ;
+}
+
+/* para el login*/
+
+.boxlogin{
+	border-radius: 4px;
+	box-shadow:0px 2x 10px #d6d6d6;
+	margin:50px auto;
+	width: 320px;
+	-webki-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+/* boton de login*/
+
+input[type="sumit"]{
+	margin-top: 15px;
+}
+
+/* media querie */
+
+@media screen and (max-width: 768px){
+	.post .thumb {
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}

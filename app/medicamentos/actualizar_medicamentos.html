@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Actualizar datos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Actualizar datos</h2>
+<a href="../index.html"> <p align=center> <img src="../../img/update.jpeg" width="100" height="100" name="Inicio"> </p> </a>
+
+  <form class="form-horizontal" action="actualizar_medicamentos.php" role="form" method="POST">
+
+    <div class="input">
+      <label>Codigo Producto:</label>
+      <input type="text" class="form-control"  name="CodigoProducto" placeholder="Ingrese el id a actualizar">
+    </div>
+
+    <div class="input">
+      <label>Nombre Científico:</label>
+      <input type="text" class="form-control"  name="NombreCientifico" placeholder="Ingrese el nuevo nombre científico">
+    </div>
+
+    <div class="input">
+      <label>Precio De Compra:</label>
+      <input type="int" class="form-control" name="Precio" placeholder="Ingrese el nuevo precio">
+    </div>
+
+    <div class="input">
+      <label>Fecha de caducidad:</label>
+      <input type="int" class="form-control" name="FechaDeCaducidad" placeholder="Ingrese el nuevo valor de compra">
+    </div>
+
+ <p></p>
+ <p></p>
+<p></p>
+<p></p>
+
+    <button type="submit" name="submit" class="btn btn-default">Actualizar datos</button>
+  </form>
+
+</div>
+
+<p></p>
+<p></p>
+
+</body>
+</html>
